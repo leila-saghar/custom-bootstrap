@@ -1,0 +1,29 @@
+﻿<div class="wrapper">
+    <div class="container">
+        <table ng-table class="table table-striped">  
+            <thead>
+                <tr>
+                    <th>first name</th>
+                    <th>last name</th>
+                    <th>birth date</th>
+                    <th>balance</th>  
+                    <th>email</th>                   
+                </tr>
+            </thead>
+            <tbody>
+                <tr name="customerTable" ng-repeat="item in vm.courseList">
+                    <td>{{item.name}}</td>
+                    <td>{{item.lastname}}</td>
+                    <td>{{item.birthDate | date}}</td>
+                    <td>{{item.balance | currency}}</td>
+                    <td>
+                        <button type="button" class="btn btn-sm" popover-placement="top" popover="{{item.email}}" >
+                            <i class="glyphicon glyphicon-envelope"></i>
+                        </button>
+                        <a ng-href="mailto:{{item.email}}">email</a>                       
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

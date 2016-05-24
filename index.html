@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Martin Bean" />
+    <title>Custom Bootstrap Example</title>
+    <link href="lib/custom-bootstrap/custom-bootstrap.css" rel="stylesheet" />
+    <link href="lib/ng-table/dist/ng-table.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="">
+</head>
+<body ng-controller="homeCtrl as m">
+    <!-- HEADER AND NAVBAR -->
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="" /></a>
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Customized Bootstrap Example</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">                  
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+                    <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+                    <li><a href="#customers"><i class="fa fa-comment"></i> customerDetails</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <input type="button" id="mybtn" name="mybtn" class="btn btn-primary" ng-click="m.showResults()" value="show more details" />
+        <div id="main" class="row">           
+            <div ui-view></div>
+        </div>
+    </div>    
+    <footer>
+        <div class="container">
+            <p>used custom css styling the footer <a href="http://getbootstrap.com/customize" > customize Bootstrap's components</a></p>
+        </div>
+    </footer>
+
+    <!--bootstrap & JQuery-->  
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+
+    <!--angular-->
+    <script src="lib/angular/angular.js"></script>    
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="lib/ng-table/dist/ng-table.min.js"></script>
+    <!--application-->
+    <script src="app/app.mdl.js"></script>
+    <script src="app/controllers/home.Ctrl.js"></script>
+    <script src="app/controllers/customers.ctrl.js"></script>
+</body>
+</html>

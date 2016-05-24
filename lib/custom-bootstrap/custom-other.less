@@ -1,0 +1,38 @@
+﻿footer {
+    color: #666;
+    background: @navbar-default-bg;
+    padding: 17px 0 18px 0;
+    bottom:0;
+    border: 1px solid transparent;
+    // Prevent floats from breaking the navbar
+    &:extend(.clearfix all);
+    position: fixed;
+    width: 100%;
+    @media (min-width: @grid-float-breakpoint) {
+        border-radius: @navbar-border-radius;
+    }
+    a {
+        color: #999;
+        hover {
+            color: #efefef;
+        }
+    }
+}
+
+/*.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #f00;
+ }*/
+
+/*.table-striped>tr:nth-child(odd){
+   background-color:red;
+}*/
+
+.table-striped {   
+  > tbody > tr > td {
+    text-align: center;
+  }
+  > thead > tr > th{
+    background-color: @navbar-default-bg;   
+    }  
+}

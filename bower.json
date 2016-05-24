@@ -1,0 +1,28 @@
+{
+  "name": "custom-Bootstrap",
+  "homepage": "https://github.com/leila-saghar/custom-bootstrap",
+  "description": "modify boodstrap to meet our needs",
+  "main": "index.html",
+  "moduleType": [],
+  "authors": [
+    "Leila"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.8",
+    "angular-route": "1.4.x",
+    "angular-ui-router": "~0.2.13"
+  },
+  "resolutions": {
+    "angular": "1.5.5"
+  }
+}
